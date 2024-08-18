@@ -1,0 +1,16 @@
+.card {
+	width: 250px;
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+.infoBlock {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.ingredients {
+	width: 100%;
+	text-wrap: wrap;
+}

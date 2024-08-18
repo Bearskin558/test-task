@@ -1,0 +1,21 @@
+.wrapper {
+	width: 250px;
+	display: flex;
+	flex-direction: column;
+	gap: 30px;
+}
+.filtersBlock {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+.buttonBlock {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+.checkboxGroup > div {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}

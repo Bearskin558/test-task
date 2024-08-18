@@ -1,0 +1,63 @@
+$animation: all 0.25s ease-in-out;
+.burger {
+	width: 40px;
+	height: 25px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	margin-top: 50px;
+	cursor: pointer;
+	padding: 0;
+	background-color: inherit;
+	border: none;
+	transition: $animation;
+
+	span {
+		width: 100%;
+		height: 4px;
+		background-color: wheat;
+	}
+
+	.top {
+		background-color: #35cbf9;
+		transition: $animation;
+	}
+	.main {
+		position: relative;
+		background-color: #5de280;
+		transition: $animation;
+		transition-delay: 0.15s;
+
+		&::after {
+			content: "";
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background-color: #5de280;
+			transition: $animation;
+			transition-delay: 0.1s;
+		}
+	}
+	.bottom {
+		background-color: #2712a0;
+		transition: $animation;
+	}
+}
+
+.burger:hover {
+	scale: 1.15;
+}
+.burger.active {
+	.top,
+	.bottom {
+		opacity: 0;
+	}
+	.main {
+		transform: rotate(-45deg);
+		&::after {
+			transform: rotate(-90deg);
+		}
+	}
+}
