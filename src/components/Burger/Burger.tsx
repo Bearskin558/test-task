@@ -4,14 +4,12 @@ import styles from "./Burger.module.scss"
 
 const Burger = () => {
 	const [isActive, setisActive] = useState(false)
-	const onClickHandler = (e: React.MouseEvent<HTMLButtonElement, MouseEvent>) => {
-		setisActive(!isActive)
-	}
+
 	const burgerClassname = classNames({ [styles.burger]: true, [styles.active]: isActive })
 	return (
 		<button
 			className={burgerClassname}
-			onClick={e => onClickHandler(e)}
+			onClick={() => setisActive(!isActive)}
 		>
 			<span className={styles.top}></span>
 			<span className={styles.main}></span>
