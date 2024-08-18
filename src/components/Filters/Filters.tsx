@@ -1,4 +1,4 @@
-import { Button, Checkbox, CheckboxGroup, Radio, Text } from "@mantine/core"
+import { Button, Checkbox, Radio, Text } from "@mantine/core"
 import { useState } from "react"
 import { FilterPrice, useFilterStore } from "../../store/filterStore"
 import { usePizzaStore } from "../../store/pizzasStore"
